@@ -1,0 +1,24 @@
+{
+  "name": "nft-arb-bot",
+  "version": "1.0.0",
+  "description": "This Python script refreshes the Opensea offers in a Firebase Realtime Database. It uses the Firebase Admin SDK for Python and the `firebase-admin` package to authenticate with Firebase and access the database.",
+  "main": "blur.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beepboop-eth/nft-arb-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beepboop-eth/nft-arb-bot/issues"
+  },
+  "homepage": "https://github.com/beepboop-eth/nft-arb-bot#readme",
+  "dependencies": {
+    "puppeteer": "^19.7.2",
+    "puppeteer-core": "^19.7.2"
+  }
+}
