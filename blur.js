@@ -7,7 +7,7 @@ const fs = require('fs');
     userDataDir: '/Users/janusmanlapaz/Library/Application Support/Google/Chrome/',
     args: [
       '--disable-features=IsolateOrigins,site-per-process',
-      `--profile-directory=Profile 12`,
+      // `--profile-directory=Profile 12`,
       '--no-sandbox',
       '--disable-setuid-sandbox',
       '--disable-dev-shm-usage'
