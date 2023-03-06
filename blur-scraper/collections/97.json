@@ -1,0 +1,3179 @@
+{
+  "success": true,
+  "totalCount": 11441,
+  "collections": [
+    {
+      "contractAddress": "0xcefb53dc61b4faeef343f2f6e95cb007db1cfb34",
+      "name": "Wormhole Pass",
+      "collectionSlug": "wormhole-pass",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcefb53dc61b4faeef343f2f6e95cb007db1cfb34/3471-d2cf458b210d0e8d",
+      "totalSupply": 5555,
+      "numberOwners": 1064,
+      "floorPrice": {
+        "amount": "0.0001",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0026",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0027",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0.0001",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcefc4e7fb22b99b8e7e75293d38f4ad050faca92",
+      "name": "OutlandishCreatures",
+      "collectionSlug": "outlandishcreatures",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcefc4e7fb22b99b8e7e75293d38f4ad050faca92/235-5891ed410c1aebda",
+      "totalSupply": 2222,
+      "numberOwners": 2074,
+      "floorPrice": {
+        "amount": "0.0002",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0002",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0002",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf12340d2e132429e87c9a2b8666ce97fdee2426",
+      "name": "Tic Tac Toe",
+      "collectionSlug": "tictictoebychauvet",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf12340d2e132429e87c9a2b8666ce97fdee2426/18-53bf2397ac0090b5",
+      "totalSupply": 40,
+      "numberOwners": 12,
+      "floorPrice": null,
+      "floorPriceOneDay": {
+        "amount": "0.2",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.2",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf17385a1794bfe24a356b3289cf81a4b349b770",
+      "name": "JFK Digital Trading Cards",
+      "collectionSlug": "jfkcards",
+      "imageUrl": null,
+      "totalSupply": 3500,
+      "numberOwners": 263,
+      "floorPrice": {
+        "amount": "0.003",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0013",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0013",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf1f1b578aaf648bd2bebe904fbca21269e71e57",
+      "name": "MyLand Metaverse Genesis",
+      "collectionSlug": "myland-metaverse-genesis",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf1f1b578aaf648bd2bebe904fbca21269e71e57/166-053dabf7e383727c",
+      "totalSupply": 488,
+      "numberOwners": 212,
+      "floorPrice": {
+        "amount": "0.012",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.012",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.013",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0.075",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf208f3c4286536d94c45cc77636943a102f21b6",
+      "name": "Ghouls - The Living Deads",
+      "collectionSlug": "ghoulsxyz",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf208f3c4286536d94c45cc77636943a102f21b6/253-70ffe19f83149848",
+      "totalSupply": 473,
+      "numberOwners": 198,
+      "floorPrice": {
+        "amount": "0.0038",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0038",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0035",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0.0538",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf2bc3205c58f44a74eb489884c2619d51ff6bc1",
+      "name": "Bubblehouse NFT V3",
+      "collectionSlug": "bubblehouse-nft-v3-v2",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf2bc3205c58f44a74eb489884c2619d51ff6bc1/3939295-63f9b63495eb5125",
+      "totalSupply": 9061,
+      "numberOwners": 186,
+      "floorPrice": null,
+      "floorPriceOneDay": null,
+      "floorPriceOneWeek": null,
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf3586d2437244c83df9a569d94c840451e7fb1d",
+      "name": "Mutant Okay Azukis",
+      "collectionSlug": "mutant-okay-azukis",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf3586d2437244c83df9a569d94c840451e7fb1d/6124-e82e02768fd9457f",
+      "totalSupply": 6948,
+      "numberOwners": 371,
+      "floorPrice": {
+        "amount": "0.0008",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0009",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0009",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf3a09e9f008b749474083767646071ed225187f",
+      "name": "chatGIF",
+      "collectionSlug": "chatgif",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf3a09e9f008b749474083767646071ed225187f/475-6361eddb19012e2f",
+      "totalSupply": 1000,
+      "numberOwners": 444,
+      "floorPrice": {
+        "amount": "0.003",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0015",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0022",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf3a65864dfb6d4aeaaa93dde66ad3deb227c3e3",
+      "name": "EXO",
+      "collectionSlug": "exo-official",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf3a65864dfb6d4aeaaa93dde66ad3deb227c3e3/7336-a1747892d6158693",
+      "totalSupply": 10090,
+      "numberOwners": 2443,
+      "floorPrice": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf48822a16506bb80943749fa49934f8ee337fba",
+      "name": "WizGoneRogue",
+      "collectionSlug": "wizgonerogue",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf48822a16506bb80943749fa49934f8ee337fba/2114-52bbdf9e0bfafd67",
+      "totalSupply": 2221,
+      "numberOwners": 1195,
+      "floorPrice": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf508537bae80c1c15b50345294a8d927f560b60",
+      "name": "MinideathX",
+      "collectionSlug": "minideath-x",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf508537bae80c1c15b50345294a8d927f560b60/101-92ae00a4d0151792",
+      "totalSupply": 350,
+      "numberOwners": 133,
+      "floorPrice": {
+        "amount": "0.0333",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0333",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0333",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf514faa49cb3133275eb4c9420e4161970ee806",
+      "name": "Sacred Skulls",
+      "collectionSlug": "sacred-skulls-official",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf514faa49cb3133275eb4c9420e4161970ee806/441-92ceda95e93729c7",
+      "totalSupply": 8888,
+      "numberOwners": 3652,
+      "floorPrice": {
+        "amount": "0.006",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.006",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0074",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0.0969705",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf5810b94b69c7aa05dc7a3bd0da1c05ba3c8bdc",
+      "name": "CyberApe2077",
+      "collectionSlug": "cyberape2077",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf5810b94b69c7aa05dc7a3bd0da1c05ba3c8bdc/848-10898c107e4e250d",
+      "totalSupply": 3000,
+      "numberOwners": 691,
+      "floorPrice": {
+        "amount": "0.0008",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0008",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0008",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf599a6843e42083207307841531e3e9c0b54127",
+      "name": "degenRPG",
+      "collectionSlug": "degenrpg",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf599a6843e42083207307841531e3e9c0b54127/4053-061a390e9c210305",
+      "totalSupply": 4053,
+      "numberOwners": 1477,
+      "floorPrice": {
+        "amount": "0.0045",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.005",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.005",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf5a5dff8669836d53990b1a493bccbad8b124b6",
+      "name": "TOTO",
+      "collectionSlug": "totobysnobs",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf5a5dff8669836d53990b1a493bccbad8b124b6/4959-32ef65d64d949c7d",
+      "totalSupply": 5678,
+      "numberOwners": 1987,
+      "floorPrice": {
+        "amount": "0.0001",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0001",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0001",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf5f28724748272664f92ca07c19322edebd8230",
+      "name": "Animoon Potion 2",
+      "collectionSlug": "animoon-potion-2",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf5f28724748272664f92ca07c19322edebd8230/170-6176b9e7ebcd7dab",
+      "totalSupply": 976,
+      "numberOwners": 139,
+      "floorPrice": {
+        "amount": "0.015",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.015",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.09",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf62e0d1a472f4d3e8a5381c4ca901e96ba9c4db",
+      "name": "My Rugs",
+      "collectionSlug": "my-rugs",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf62e0d1a472f4d3e8a5381c4ca901e96ba9c4db/128-69d0a91eb18a383e",
+      "totalSupply": 1000,
+      "numberOwners": 392,
+      "floorPrice": {
+        "amount": "0.00839",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.004",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.004",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0.07484",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf640b597c08d0e0af7ca2177dbf59a726760538",
+      "name": "Faded22",
+      "collectionSlug": "faded22",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf640b597c08d0e0af7ca2177dbf59a726760538/11-ded3ef7a327bbdd7",
+      "totalSupply": 13,
+      "numberOwners": 4,
+      "floorPrice": null,
+      "floorPriceOneDay": null,
+      "floorPriceOneWeek": null,
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf6f5429b389b72e0a9000f3616659f1f6da4725",
+      "name": "LapixZeroOfficial",
+      "collectionSlug": "lapixzero-components",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf6f5429b389b72e0a9000f3616659f1f6da4725/4197-a8b9bc3e14d6d164",
+      "totalSupply": 4290,
+      "numberOwners": 315,
+      "floorPrice": {
+        "amount": "0.00019",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0002",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.00025",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf7bcdbc9cd6ab7556e789269bae26a7720bd1b1",
+      "name": "I am Not a Robot V2",
+      "collectionSlug": "i-am-not-a-robot-v2-1",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf7bcdbc9cd6ab7556e789269bae26a7720bd1b1/49-5413360e4aae9a04",
+      "totalSupply": 999,
+      "numberOwners": 689,
+      "floorPrice": {
+        "amount": "0.0035",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.002",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.002",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf8009f8e3446296d02b63d43e8066d130ce27b3",
+      "name": "THE HEIST by MGMS",
+      "collectionSlug": "the-heist-collection",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf8009f8e3446296d02b63d43e8066d130ce27b3/1849-524a943d35383043",
+      "totalSupply": 2073,
+      "numberOwners": 665,
+      "floorPrice": {
+        "amount": "0.0342",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.033",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.033",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0.065",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "totalCollectionBidValue": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf818f1453f13d8b1e93a907db67e0fb6cd061b3",
+      "name": "MIB19Queen",
+      "collectionSlug": "mib19queen",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf818f1453f13d8b1e93a907db67e0fb6cd061b3/1007-c982ce189065d1c0",
+      "totalSupply": 2046,
+      "numberOwners": 432,
+      "floorPrice": {
+        "amount": "0.02",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.029",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.021",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0.104",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf8918df752ad873b79f8ea05a80ad8fd02a64e6",
+      "name": "Pixel Pony Hornstars",
+      "collectionSlug": "pixel-pony-hornstars",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf8918df752ad873b79f8ea05a80ad8fd02a64e6/1417-a984549740d9a573",
+      "totalSupply": 2669,
+      "numberOwners": 768,
+      "floorPrice": {
+        "amount": "0.0024",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0024",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0025",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf923bddba633771dcc068d000c4aa41142844e5",
+      "name": "Ghost by Nefelibata",
+      "collectionSlug": "ghost-by-nefelibata-1",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf923bddba633771dcc068d000c4aa41142844e5/417-780527c5ed5e6a85",
+      "totalSupply": 888,
+      "numberOwners": 505,
+      "floorPrice": {
+        "amount": "0.0018",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0018",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0018",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcf9813e15dcf82add8bfa55e40a40d31f2278c66",
+      "name": "Skeleton By Freddy",
+      "collectionSlug": "skeleton-by-freddy",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcf9813e15dcf82add8bfa55e40a40d31f2278c66/262-777f440ea24b700b",
+      "totalSupply": 263,
+      "numberOwners": 261,
+      "floorPrice": {
+        "amount": "0.05",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.02",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.02",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcfa051e2647117e6ad7ad857f3d34c71567106b9",
+      "name": "BioHazard Genesis",
+      "collectionSlug": "biohazard-genesis",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcfa051e2647117e6ad7ad857f3d34c71567106b9/1144-ab3b5e00c86a2f9b",
+      "totalSupply": 4666,
+      "numberOwners": 2610,
+      "floorPrice": {
+        "amount": "0.0011",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.015",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0018",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcfb1871277c05d604ac5ec21d19d46c519a0b86e",
+      "name": "Bored Nftrader Club",
+      "collectionSlug": "bored-nftrader-club",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcfb1871277c05d604ac5ec21d19d46c519a0b86e/294-1af9ad19cf56b35a",
+      "totalSupply": 1500,
+      "numberOwners": 404,
+      "floorPrice": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": null,
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcfbb1c67592964bda88cab985c55cfcc87361db6",
+      "name": "Banksy ApExperiment",
+      "collectionSlug": "apexperiment-by-banksy-v2",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcfbb1c67592964bda88cab985c55cfcc87361db6/378-a5089f97bfcb42b3",
+      "totalSupply": 444,
+      "numberOwners": 159,
+      "floorPrice": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0011",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0.0029",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcfd0e91efad872a4342a6b8aa2b385e2c7d126dc",
+      "name": "ThisIsTheMeta",
+      "collectionSlug": "thisisthemeta",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcfd0e91efad872a4342a6b8aa2b385e2c7d126dc/522-2359712aec579efd",
+      "totalSupply": 666,
+      "numberOwners": 298,
+      "floorPrice": {
+        "amount": "0.015",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.015",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.015",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcfd74a41812c0f864d38a8aa10f48b84a2f6d59d",
+      "name": "Fepe",
+      "collectionSlug": "fepe",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcfd74a41812c0f864d38a8aa10f48b84a2f6d59d/2636-83083f5e181181c9",
+      "totalSupply": 4000,
+      "numberOwners": 1999,
+      "floorPrice": null,
+      "floorPriceOneDay": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": null,
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcfd7a362d2966a698e15b749232db31497475b96",
+      "name": "IkigaiNFT",
+      "collectionSlug": "theikigai",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcfd7a362d2966a698e15b749232db31497475b96/198-80ae1db36be095e0",
+      "totalSupply": 333,
+      "numberOwners": 256,
+      "floorPrice": {
+        "amount": "0.007",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0075",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.008",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcfe103972e9017404d7d3673dbf91431dc032296",
+      "name": "OnmyoujiSub",
+      "collectionSlug": "onmyoujisub",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcfe103972e9017404d7d3673dbf91431dc032296/269-ae0ec694f028b863",
+      "totalSupply": 800,
+      "numberOwners": 322,
+      "floorPrice": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.002",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcfe2c9a6144757f7dd6ff05d47064dee7ea2f23f",
+      "name": "David's Life After Death",
+      "collectionSlug": "davids-life-after-death",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcfe2c9a6144757f7dd6ff05d47064dee7ea2f23f/501-a846a319dfd32d22",
+      "totalSupply": 749,
+      "numberOwners": 285,
+      "floorPrice": {
+        "amount": "0.0028",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.002",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.002",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcfe349e13ae2d54751003a589c2db146e5b06265",
+      "name": "Area 61 Aliens",
+      "collectionSlug": "area-61-aliens",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcfe349e13ae2d54751003a589c2db146e5b06265/104-041d2b163260da2d",
+      "totalSupply": 183,
+      "numberOwners": 22,
+      "floorPrice": {
+        "amount": "0.025",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.025",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": null,
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0.025",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcfe5cdd6764b5406d0d6d4293cc729601902700b",
+      "name": "MOON TROOPER",
+      "collectionSlug": "moon-trooper",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcfe5cdd6764b5406d0d6d4293cc729601902700b/340-5ab45042153ec683",
+      "totalSupply": 966,
+      "numberOwners": 103,
+      "floorPrice": {
+        "amount": "0.005",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0065",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0065",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcfeb8f0d0a561ef77bd61ee232ec38dbef599b6d",
+      "name": "Cavemans Club",
+      "collectionSlug": "cavemansclubnft",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcfeb8f0d0a561ef77bd61ee232ec38dbef599b6d/2888-0bdf50ee89ae7abe",
+      "totalSupply": 4488,
+      "numberOwners": 1313,
+      "floorPrice": null,
+      "floorPriceOneDay": {
+        "amount": "0.003",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.003",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcffb4fcb1dbd08b912e5817a997a9494faea1324",
+      "name": "Ape To Moon",
+      "collectionSlug": "apetomoonnft",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcffb4fcb1dbd08b912e5817a997a9494faea1324/595-d18a744b11662249",
+      "totalSupply": 971,
+      "numberOwners": 183,
+      "floorPrice": {
+        "amount": "0.0001",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.005",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.005",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xcffc2d2ee175bcb8a8dd2d157bf31e9ae10d6440",
+      "name": "IAMROBOT",
+      "collectionSlug": "iamrobotgame",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xcffc2d2ee175bcb8a8dd2d157bf31e9ae10d6440/2118-031a355c2c7bfa7f",
+      "totalSupply": 2414,
+      "numberOwners": 1113,
+      "floorPrice": {
+        "amount": "0.0007",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0007",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0007",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd008b316d214e254445a90a12dcfe590e3ebea64",
+      "name": "CYBER MISORIN",
+      "collectionSlug": "cyber-misorin",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd008b316d214e254445a90a12dcfe590e3ebea64/591-27ddbf2f9194ed50",
+      "totalSupply": 10000,
+      "numberOwners": 892,
+      "floorPrice": {
+        "amount": "0.000199",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.00001",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.00001",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd00b188c5bb2a1f92b942527f16308e15bdf4361",
+      "name": "GrowerPunks (\ud83c\udf46, \ud83c\udf46)",
+      "collectionSlug": "growerpunks",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd00b188c5bb2a1f92b942527f16308e15bdf4361/9294-2e4f6838b7e6909f",
+      "totalSupply": 263,
+      "numberOwners": 107,
+      "floorPrice": {
+        "amount": "0.0011",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0011",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd020086a3285caaf8e727afd12b396c878f0cdc6",
+      "name": "MONKEYZ by LUIS SIMO",
+      "collectionSlug": "monkeyz-by-luis-simo",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd020086a3285caaf8e727afd12b396c878f0cdc6/13-90bee9ec8c21643d",
+      "totalSupply": 173,
+      "numberOwners": 63,
+      "floorPrice": {
+        "amount": "0.0145",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0149",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0149",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd027ef4d00d04758c866475c566ad10bfdc6bdcd",
+      "name": "Mongrel Breeding Program",
+      "collectionSlug": "mongrelsofficial",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd027ef4d00d04758c866475c566ad10bfdc6bdcd/100-1b8f33c70c4e8f1c",
+      "totalSupply": 1655,
+      "numberOwners": 377,
+      "floorPrice": {
+        "amount": "0.0015",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0015",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0015",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd0309b3f8006b25d8ea1214d989a234139a2e25e",
+      "name": "AzuGoal Football Fantasy",
+      "collectionSlug": "azugoalnft",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd0309b3f8006b25d8ea1214d989a234139a2e25e/2235-81a99994b7eb9d5e",
+      "totalSupply": 2870,
+      "numberOwners": 735,
+      "floorPrice": {
+        "amount": "0.0003",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0003",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0003",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd037af68df72725a82b62aee9fd70aa958801cb1",
+      "name": "Kitsune",
+      "collectionSlug": "the-kitsune-nft",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd037af68df72725a82b62aee9fd70aa958801cb1/2282-723face9a74db519",
+      "totalSupply": 4444,
+      "numberOwners": 2128,
+      "floorPrice": {
+        "amount": "0.0003",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0003",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0003",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd03a01c1f5d4f727198969a5464816e960c203c3",
+      "name": "Kakumeica",
+      "collectionSlug": "kakumeica",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd03a01c1f5d4f727198969a5464816e960c203c3/1-08fec18136c85a18",
+      "totalSupply": 4,
+      "numberOwners": 2,
+      "floorPrice": null,
+      "floorPriceOneDay": null,
+      "floorPriceOneWeek": null,
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "totalCollectionBidValue": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd0489a1214b39daa6abf23628c6854539c8e39f8",
+      "name": "echibi",
+      "collectionSlug": "echibi",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd0489a1214b39daa6abf23628c6854539c8e39f8/663-344ec5930b9b1081",
+      "totalSupply": 999,
+      "numberOwners": 159,
+      "floorPrice": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.014",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0.075",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd05dc200c9a40e83718406a28b337451e3c994b8",
+      "name": "SlicesOfTIMEArtists",
+      "collectionSlug": "timepieces-sot-artists",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd05dc200c9a40e83718406a28b337451e3c994b8/1815-021795d84fbdc1b4",
+      "totalSupply": 4852,
+      "numberOwners": 2493,
+      "floorPrice": {
+        "amount": "0.013",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.012",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.013",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0.409",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "totalCollectionBidValue": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd05fe72b0dd55f08051b6590a7d8b7c79fab59f4",
+      "name": "Cute AF",
+      "collectionSlug": "cute-af-io",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd05fe72b0dd55f08051b6590a7d8b7c79fab59f4/1719-0808c43fe82784ae",
+      "totalSupply": 3333,
+      "numberOwners": 965,
+      "floorPrice": {
+        "amount": "0.0009",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.002",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.004",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd067c22089a5c8ab9bec4a77c571a624e18f25e8",
+      "name": "Origins by PixelGan",
+      "collectionSlug": "pixelgans",
+      "imageUrl": null,
+      "totalSupply": 100,
+      "numberOwners": 68,
+      "floorPrice": {
+        "amount": "0.2",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.3",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.3",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd06be41c5bbf0a4cb5b3c4a077452423321f1487",
+      "name": "BusinessDungeon",
+      "collectionSlug": "business-dungeon",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd06be41c5bbf0a4cb5b3c4a077452423321f1487/79-ceeb1448fc2df2b1",
+      "totalSupply": 100,
+      "numberOwners": 91,
+      "floorPrice": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": null,
+      "floorPriceOneWeek": null,
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd071745151c77f57dd427e3e04acc774c127ed68",
+      "name": "Hound Yacht Club",
+      "collectionSlug": "hound-yacht-club",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd071745151c77f57dd427e3e04acc774c127ed68/3212-d1e14248a485f527",
+      "totalSupply": 5000,
+      "numberOwners": 1170,
+      "floorPrice": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd08b02a76552fa54d8616f8d42c3cf0de3c0a9ec",
+      "name": "Cunning Wolf Society",
+      "collectionSlug": "cunning-wolf-society-cws",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd08b02a76552fa54d8616f8d42c3cf0de3c0a9ec/2602-b5961987c970fb26",
+      "totalSupply": 5009,
+      "numberOwners": 2489,
+      "floorPrice": {
+        "amount": "0.003",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0035",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0039",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd0959d42a286bb6470cc22cb217e26bdc40f29f6",
+      "name": "S-C-A-V-E-N-G-E-R-S",
+      "collectionSlug": "s-c-a-v-e-n-g-e-r-s",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd0959d42a286bb6470cc22cb217e26bdc40f29f6/0-8cfe48395b58b3ae",
+      "totalSupply": 444,
+      "numberOwners": 158,
+      "floorPrice": {
+        "amount": "0.0011",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0012",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0015",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd09ae75438d97d5bab0d6bace9dd5734c667c51d",
+      "name": "Degen Apocalypse Project",
+      "collectionSlug": "degen-apocalypse-project",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd09ae75438d97d5bab0d6bace9dd5734c667c51d/904-4b50d11fe0511224",
+      "totalSupply": 999,
+      "numberOwners": 392,
+      "floorPrice": {
+        "amount": "0.005",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.007",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.002",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0.005",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd0a55f052af852cf8edf67d6f1e6bff41b58cb29",
+      "name": "WKTK - Yamato Studio",
+      "collectionSlug": "wktk-yamato-studio",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd0a55f052af852cf8edf67d6f1e6bff41b58cb29/101-0e0754cc67d4d910",
+      "totalSupply": 222,
+      "numberOwners": 85,
+      "floorPrice": {
+        "amount": "0.0099",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd0a635b828eb98d26105935bf87f81abbcd8bb51",
+      "name": "RAMENFT by Ryojin",
+      "collectionSlug": "ramenft-by-ryojin",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd0a635b828eb98d26105935bf87f81abbcd8bb51/911-b4bf478a86940b2e",
+      "totalSupply": 1000,
+      "numberOwners": 736,
+      "floorPrice": {
+        "amount": "0.005",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0056",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.005",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd0aa902dc1367842b3592416654fd97b3398ee2f",
+      "name": "HOUSE OF DORAGON",
+      "collectionSlug": "houseofdoragon",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd0aa902dc1367842b3592416654fd97b3398ee2f/2447-3ea9b37f269d0227",
+      "totalSupply": 5000,
+      "numberOwners": 1343,
+      "floorPrice": {
+        "amount": "0.0009",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": null,
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd0ab28a28e86b5d645632fe2d3a97b767aac5f0f",
+      "name": "BrokiesNFT",
+      "collectionSlug": "brokiesnft",
+      "imageUrl": null,
+      "totalSupply": 5005,
+      "numberOwners": 438,
+      "floorPrice": {
+        "amount": "0.0004",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0004",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0004",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd0b7acaa8f9d6f67ab099ac546a2e9c15ab607ed",
+      "name": "HOZUKI NFT",
+      "collectionSlug": "hozuki-nft",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd0b7acaa8f9d6f67ab099ac546a2e9c15ab607ed/2398-8af184e4e4c53db3",
+      "totalSupply": 5858,
+      "numberOwners": 1822,
+      "floorPrice": {
+        "amount": "0.0002",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0002",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0002",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd0ba5e66f46329de0d6189b0ff02ca394192d935",
+      "name": "CopePenguins",
+      "collectionSlug": "copepenguins",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd0ba5e66f46329de0d6189b0ff02ca394192d935/4946-1d751c5d933aad16",
+      "totalSupply": 6111,
+      "numberOwners": 2023,
+      "floorPrice": {
+        "amount": "0.0004",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0004",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0004",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd0dbac52b6dc2dd4e785c9b4a00edb20ed828b3e",
+      "name": "42 Everywhere",
+      "collectionSlug": "42-everywhere",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd0dbac52b6dc2dd4e785c9b4a00edb20ed828b3e/241-3f87509f76790f1b",
+      "totalSupply": 370,
+      "numberOwners": 14,
+      "floorPrice": {
+        "amount": "0.15",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.03",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.03",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd0dd53081436ed67d2b1fe1a521c125c080cd6bf",
+      "name": "INFLUENCE - Big Hugs Studio (side project)",
+      "collectionSlug": "influence-bhs",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd0dd53081436ed67d2b1fe1a521c125c080cd6bf/423-1405a2958f848203",
+      "totalSupply": 1000,
+      "numberOwners": 128,
+      "floorPrice": {
+        "amount": "0.0018",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0018",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd0e53f7100f5d0497c2f28b8c560c013a83b5811",
+      "name": "Deadfellaz Infected S2",
+      "collectionSlug": "df-infected-s2",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd0e53f7100f5d0497c2f28b8c560c013a83b5811/61-461856b8522cb6b6",
+      "totalSupply": 83,
+      "numberOwners": 78,
+      "floorPrice": {
+        "amount": "0.389",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.439",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.439",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": {
+        "amount": "0.15",
+        "unit": "ETH"
+      },
+      "totalCollectionBidValue": {
+        "amount": "5.97",
+        "unit": "ETH"
+      },
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd0e5987b2851f676ba2f680f8ed6a1f2ed3ba992",
+      "name": "HUXLEY Humans",
+      "collectionSlug": "huxley-humans",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd0e5987b2851f676ba2f680f8ed6a1f2ed3ba992/2591-f7a65ff53b0f4b04",
+      "totalSupply": 3000,
+      "numberOwners": 1089,
+      "floorPrice": {
+        "amount": "0.145",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.145",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.1275",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0.43813",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": {
+        "amount": "0.11",
+        "unit": "ETH"
+      },
+      "totalCollectionBidValue": {
+        "amount": "9.50",
+        "unit": "ETH"
+      },
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd0e7bc3f1efc5f098534bce73589835b8273b9a0",
+      "name": "Wrapped CryptoCats",
+      "collectionSlug": "wrappedcryptocats",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd0e7bc3f1efc5f098534bce73589835b8273b9a0/264-279c784e0013cc4f",
+      "totalSupply": 315,
+      "numberOwners": 159,
+      "floorPrice": {
+        "amount": "2.47",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "2.5",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "2.5",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": {
+        "amount": "0.33",
+        "unit": "ETH"
+      },
+      "totalCollectionBidValue": {
+        "amount": "5.47",
+        "unit": "ETH"
+      },
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd0f07cf1912722cd18741a1d94577e2cac3c8f00",
+      "name": "EthMingo",
+      "collectionSlug": "ethmingo",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd0f07cf1912722cd18741a1d94577e2cac3c8f00/933-0eaf834e24fde90c",
+      "totalSupply": 1212,
+      "numberOwners": 1187,
+      "floorPrice": {
+        "amount": "0.0006",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0006",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd10abae2909a3e52a5ce43e1b8a100167c98a9b3",
+      "name": "INTELLIG3NT PANDA ",
+      "collectionSlug": "intellig3nt-panda",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd10abae2909a3e52a5ce43e1b8a100167c98a9b3/682-0aad7217df6a4fe5",
+      "totalSupply": 999,
+      "numberOwners": 762,
+      "floorPrice": null,
+      "floorPriceOneDay": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd10d13ae1d6314032efde2448a7947538f06b8de",
+      "name": "Orbitals By Jared",
+      "collectionSlug": "orbitals-by-jared",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd10d13ae1d6314032efde2448a7947538f06b8de/112-0f6de6cbb411c409",
+      "totalSupply": 200,
+      "numberOwners": 167,
+      "floorPrice": null,
+      "floorPriceOneDay": {
+        "amount": "0.006",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.006",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd10ea170fcfd4d6f2c9fd7a596d7b0ba10a52648",
+      "name": "Weather Report",
+      "collectionSlug": "weathereportofficial",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd10ea170fcfd4d6f2c9fd7a596d7b0ba10a52648/4343-bdcd3db125a5dca2",
+      "totalSupply": 10000,
+      "numberOwners": 4547,
+      "floorPrice": {
+        "amount": "0.005",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.005",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.005",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0.2226245",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd12fe12a029347c58002edb9fe30053b58a9ecc0",
+      "name": "Script Kiddies",
+      "collectionSlug": "script-kiddies",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd12fe12a029347c58002edb9fe30053b58a9ecc0/1339-f76d2a32bfa4a20e",
+      "totalSupply": 2222,
+      "numberOwners": 499,
+      "floorPrice": {
+        "amount": "0.0017",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0017",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0013",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd135b91cd092bfc0d1bd54880dc4c72c14c56ebc",
+      "name": "StickyDoodlers",
+      "collectionSlug": "stickydoodlers",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd135b91cd092bfc0d1bd54880dc4c72c14c56ebc/22-5d894ad3a6b79507",
+      "totalSupply": 111,
+      "numberOwners": 65,
+      "floorPrice": {
+        "amount": "0.012",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.014",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.014",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd13e468e0a526b5042521b0fd658454242472ea7",
+      "name": "Happy Goat Genesis",
+      "collectionSlug": "happy-goat-genesis",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd13e468e0a526b5042521b0fd658454242472ea7/905-2f9837d0a825458b",
+      "totalSupply": 1900,
+      "numberOwners": 737,
+      "floorPrice": {
+        "amount": "0.0898",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0919",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.128",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0.32",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": {
+        "amount": "0.05",
+        "unit": "ETH"
+      },
+      "totalCollectionBidValue": {
+        "amount": "0.17",
+        "unit": "ETH"
+      },
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd13f71c96ad056d18905767f165ffc359a6eef95",
+      "name": "GENZArtLab",
+      "collectionSlug": "genzartlab",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd13f71c96ad056d18905767f165ffc359a6eef95/484-81e288ff763dd9ab",
+      "totalSupply": 1213,
+      "numberOwners": 276,
+      "floorPrice": {
+        "amount": "0.0111",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.012",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.012",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd141470697b5d14290a691a33ba19fd9564add41",
+      "name": "Moondegens Multiverse",
+      "collectionSlug": "moondegens-multiverse",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd141470697b5d14290a691a33ba19fd9564add41/301-97ebc5da5ae549af",
+      "totalSupply": 438,
+      "numberOwners": 39,
+      "floorPrice": {
+        "amount": "0.0024",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.03",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.03",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd14261a900fa8188a3a8248e20af3ab79b3748d9",
+      "name": "MasterGatorz",
+      "collectionSlug": "mastergatorzofficial",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd14261a900fa8188a3a8248e20af3ab79b3748d9/2-b066c622a6b7ae6a",
+      "totalSupply": 117,
+      "numberOwners": 36,
+      "floorPrice": {
+        "amount": "0.005",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0069",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": null,
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd154c90c4d32b3c89d83633a0c960be984e9887b",
+      "name": "Cattopillars",
+      "collectionSlug": "cattopillars",
+      "imageUrl": null,
+      "totalSupply": 801,
+      "numberOwners": 265,
+      "floorPrice": {
+        "amount": "0.0098",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.002",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.002",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd156fe77baeaf08803f23d0b48957d4eb9fc8a56",
+      "name": "BatStarWarrior",
+      "collectionSlug": "batstarwarrior",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd156fe77baeaf08803f23d0b48957d4eb9fc8a56/737-7244dd957554e1b1",
+      "totalSupply": 1727,
+      "numberOwners": 579,
+      "floorPrice": {
+        "amount": "0.00225",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.00225",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.00225",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd15828b4031a1c35d4d2b5d961f8368c4452f377",
+      "name": "impostorstown.wtf",
+      "collectionSlug": "impostorstown-wtf",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd15828b4031a1c35d4d2b5d961f8368c4452f377/119-ec063ae8b603c521",
+      "totalSupply": 215,
+      "numberOwners": 15,
+      "floorPrice": null,
+      "floorPriceOneDay": null,
+      "floorPriceOneWeek": null,
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd15a09b0679c45f3facd7bab22b676028dacff21",
+      "name": "Pegasus NFT Official",
+      "collectionSlug": "pegasus-nft",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd15a09b0679c45f3facd7bab22b676028dacff21/404-bb3a260a25d789e9",
+      "totalSupply": 571,
+      "numberOwners": 248,
+      "floorPrice": {
+        "amount": "0.008",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.008",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.008",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd15a1f86949cd1b7951caff801537ac92f814c86",
+      "name": "CosmosNFT",
+      "collectionSlug": "cosmosspace",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd15a1f86949cd1b7951caff801537ac92f814c86/1931-ddefbcd08677f4da",
+      "totalSupply": 5555,
+      "numberOwners": 2806,
+      "floorPrice": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd15b954fc2f9aed8d58f1f80c93e6c1d8268c766",
+      "name": "- by anon",
+      "collectionSlug": "dash-by-anon",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd15b954fc2f9aed8d58f1f80c93e6c1d8268c766/105-3913f9689d6354b0",
+      "totalSupply": 553,
+      "numberOwners": 395,
+      "floorPrice": {
+        "amount": "0.004",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.004",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.004",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd15d3a1d6feb173abedfabc143fce1cea4ebe753",
+      "name": "Pastel Abstract Final By Naon",
+      "collectionSlug": "pastel-abstract-final-by-naon",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd15d3a1d6feb173abedfabc143fce1cea4ebe753/100-7f3efb2b81484cea",
+      "totalSupply": 333,
+      "numberOwners": 168,
+      "floorPrice": {
+        "amount": "0.0002",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0002",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0002",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd16bdccae06dfd701a59103446a17e22e9ca0ef0",
+      "name": "Basic Bored Ape Club",
+      "collectionSlug": "basicboredapeclub",
+      "imageUrl": null,
+      "totalSupply": 10000,
+      "numberOwners": 4576,
+      "floorPrice": {
+        "amount": "0.0038",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0038",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0038",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd171a689687c91138527c589fbb89d10153824ca",
+      "name": "DiamondHearts",
+      "collectionSlug": "collection28346",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd171a689687c91138527c589fbb89d10153824ca/504-e69980e33e6f92ad",
+      "totalSupply": 568,
+      "numberOwners": 105,
+      "floorPrice": null,
+      "floorPriceOneDay": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd17fce1c4c199ff9d02c9674abf52fd35d9d058c",
+      "name": "Floor App Pass",
+      "collectionSlug": "floor-app-pass",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd17fce1c4c199ff9d02c9674abf52fd35d9d058c/9493-e0fa4449032a1c36",
+      "totalSupply": 12797,
+      "numberOwners": 9787,
+      "floorPrice": {
+        "amount": "0.004",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.004",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.004",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0.005",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd1854820671a0e91f216f00f237d07c565686fb7",
+      "name": "Hamsteria",
+      "collectionSlug": "hamsteria",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd1854820671a0e91f216f00f237d07c565686fb7/183-ec2f986b89aae170",
+      "totalSupply": 2223,
+      "numberOwners": 136,
+      "floorPrice": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.4",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.002",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd186db306f8bbdd515663e3880b2a94c16fa58b2",
+      "name": "Mirakai Scrolls",
+      "collectionSlug": "mirakai-scrolls",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd186db306f8bbdd515663e3880b2a94c16fa58b2/2882-727eea88dfa1ce48",
+      "totalSupply": 10000,
+      "numberOwners": 2100,
+      "floorPrice": {
+        "amount": "0.0019",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0019",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.002",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd18cbd6cbce919aefe027cfe361bed3882c7041c",
+      "name": "FRIDAY BEER",
+      "collectionSlug": "friday-beer-nft",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd18cbd6cbce919aefe027cfe361bed3882c7041c/562-019133727181efd0",
+      "totalSupply": 4997,
+      "numberOwners": 805,
+      "floorPrice": {
+        "amount": "0.005",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.006",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.006",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd19a5ee68e2ed7c19d509b6f4ecad7409e79ad58",
+      "name": "Bankless - Ultra Sound Money",
+      "collectionSlug": "bankless-ultra-sound-money",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd19a5ee68e2ed7c19d509b6f4ecad7409e79ad58/1-9b98efbe3d446faf",
+      "totalSupply": 100,
+      "numberOwners": 92,
+      "floorPrice": {
+        "amount": "0.4349",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.3999",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.3999",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": {
+        "amount": "0.25",
+        "unit": "ETH"
+      },
+      "totalCollectionBidValue": {
+        "amount": "0.57",
+        "unit": "ETH"
+      },
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd1aced57a209e6ca2dd3ea67a492507ec3a11142",
+      "name": "Elements by Koketit (Shira Barzilay)",
+      "collectionSlug": "elements-by-koketit-nft",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd1aced57a209e6ca2dd3ea67a492507ec3a11142/349-4a8dccc46ccaa9e5",
+      "totalSupply": 800,
+      "numberOwners": 209,
+      "floorPrice": {
+        "amount": "0.0032",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.001",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd1ad8ebfb0fb6306962e48260cf1e8062eb28cfa",
+      "name": "AlfaDAO",
+      "collectionSlug": "alfadao-access",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd1ad8ebfb0fb6306962e48260cf1e8062eb28cfa/104-1f6d7b4f4dbea6bb",
+      "totalSupply": 502,
+      "numberOwners": 426,
+      "floorPrice": {
+        "amount": "2.55",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "3",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "1.99",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "18.11",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": {
+        "amount": "1.85",
+        "unit": "ETH"
+      },
+      "totalCollectionBidValue": {
+        "amount": "62.86",
+        "unit": "ETH"
+      },
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd1be2e24b1ccc83551e597257ff15d279bf3ad84",
+      "name": "DOSA CLub",
+      "collectionSlug": "dosaclub",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd1be2e24b1ccc83551e597257ff15d279bf3ad84/1412-7f0fd3a3c1ac0d1e",
+      "totalSupply": 10000,
+      "numberOwners": 1556,
+      "floorPrice": {
+        "amount": "0.002",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.002",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.002",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd1c78f094ece6636be3b5e73d2e31864dfb5a2e2",
+      "name": "Sketchy Pages",
+      "collectionSlug": "sketchy-pages",
+      "imageUrl": null,
+      "totalSupply": 571,
+      "numberOwners": 291,
+      "floorPrice": {
+        "amount": "0.0154",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0154",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0154",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd1d1c7446e9ad76e23136ce94c85154c18e84cb1",
+      "name": "Ordinal Project Nyan",
+      "collectionSlug": "ordinal-project-nyan",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd1d1c7446e9ad76e23136ce94c85154c18e84cb1/1126-d1e715fb7623a3f8",
+      "totalSupply": 2028,
+      "numberOwners": 255,
+      "floorPrice": {
+        "amount": "0.00099",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.00099",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.00099",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd1d411d2da363144248b98adab453aa3b19ccf04",
+      "name": "Rug Radio Membership Pass",
+      "collectionSlug": "rug-radio-membership-pass",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd1d411d2da363144248b98adab453aa3b19ccf04/874-8cc48b0001e69430",
+      "totalSupply": 20000,
+      "numberOwners": 13358,
+      "floorPrice": {
+        "amount": "0.0098",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0099999",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0099",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0.8761",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "totalCollectionBidValue": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd1db50d6cfaf1e9a125eebb152c997b041186a29",
+      "name": "Topps Timeless",
+      "collectionSlug": "topps-timeless",
+      "imageUrl": null,
+      "totalSupply": 1,
+      "numberOwners": 1,
+      "floorPrice": null,
+      "floorPriceOneDay": null,
+      "floorPriceOneWeek": null,
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "totalCollectionBidValue": {
+        "amount": "0.01",
+        "unit": "ETH"
+      },
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd1eb00d5eac5ebc5630a43b0dc8f1eca4c2d3f86",
+      "name": "Genesis Of Realm Official",
+      "collectionSlug": "genesis-of-realm-official",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd1eb00d5eac5ebc5630a43b0dc8f1eca4c2d3f86/10-80eb64e12fb5da06",
+      "totalSupply": 55,
+      "numberOwners": 1,
+      "floorPrice": null,
+      "floorPriceOneDay": null,
+      "floorPriceOneWeek": null,
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd1ebb43cfd091d73eab333ce6fc8088eecdea121",
+      "name": "THE VAMPZ",
+      "collectionSlug": "the-vampz",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd1ebb43cfd091d73eab333ce6fc8088eecdea121/550-167ec42b6f6c6efe",
+      "totalSupply": 999,
+      "numberOwners": 259,
+      "floorPrice": {
+        "amount": "0.0046",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0046",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0046",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    },
+    {
+      "contractAddress": "0xd1ef0d6d3852291d69785e59bd6ce0f68200cb4d",
+      "name": "Roaring",
+      "collectionSlug": "roaring-3",
+      "imageUrl": "https://images.blur.io/_blur-prod/0xd1ef0d6d3852291d69785e59bd6ce0f68200cb4d/17-ccabbfcfe47ee71d",
+      "totalSupply": 999,
+      "numberOwners": 409,
+      "floorPrice": {
+        "amount": "0.0001",
+        "unit": "ETH"
+      },
+      "floorPriceOneDay": {
+        "amount": "0.0001",
+        "unit": "ETH"
+      },
+      "floorPriceOneWeek": {
+        "amount": "0.0001",
+        "unit": "ETH"
+      },
+      "volumeFifteenMinutes": null,
+      "volumeOneDay": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "volumeOneWeek": {
+        "amount": "0",
+        "unit": "ETH"
+      },
+      "bestCollectionBid": null,
+      "totalCollectionBidValue": null,
+      "traitFrequencies": null
+    }
+  ]
+}

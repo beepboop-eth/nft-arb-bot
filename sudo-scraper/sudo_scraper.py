@@ -11,7 +11,6 @@ import requests
 from typing import List
 from requests.exceptions import HTTPError
 
-
 def main():
   print("Scraping Sudo...")
   load_dotenv()
