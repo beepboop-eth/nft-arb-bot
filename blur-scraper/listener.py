@@ -5,15 +5,18 @@ from firebase_admin import credentials
 from firebase_admin import db
 
 def on_message(ws, message):
-    # print(f"Received message: {message}")
-    try:
-        data = json.loads(message[2:]) # remove prefix "42" and parse JSON
-        if data[0].endswith(".collectionBidStats"):
-          on_collection_bid(data)
-        elif data[0].endswith(".stats.floorUpdate"):
-          on_floor_update(data)
-    except json.JSONDecodeError:
-        pass
+    # Check for keep alive message, if received send back "3"
+    if message != "2":
+        try:
+            data = json.loads(message[2:]) # remove prefix "42" and parse JSON
+            if data[0].endswith(".collectionBidStats"):
+                on_collection_bid(data)
+            elif data[0].endswith(".stats.floorUpdate"):
+                on_floor_update(data)
+        except json.JSONDecodeError:
+            pass
+    else:
+        ws.send("3")
 
 def on_collection_bid(data):
   contract_address = data[0].split(".")[0]
