@@ -9,7 +9,8 @@ from firebase_admin import credentials
 from firebase_admin import db
 import requests
 from requests.adapters import HTTPAdapter
-from requests.packages.urllib3.util.retry import Retry
+#from requests.packages.urllib3.util.retry import Retry DEPRECATED
+from urllib3.util import Retry
 import websocket
 import ssl
 
