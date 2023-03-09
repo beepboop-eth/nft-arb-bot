@@ -67,7 +67,7 @@ def handle_collection_offer(message):
     
     top_bid = Decimal(payload['base_price']) / Decimal(1e18)
 
-    if current_top_bid != top_bid:
+    if current_top_bid > top_bid:
         print('Updating top bid for contract address', contract_address)
         record_data.update({"Opensea": {"bidPayload": payload, "topBid": str(top_bid)}}, expires=json.loads(json.dumps(EXPIRATION_TIME)))
         ref.update(record_data)

@@ -1,3 +1,4 @@
+import sys
 import websocket
 import json
 import firebase_admin
@@ -42,7 +43,7 @@ def on_collection_bid(data):
 
   if record_data is not None:
       current_best_price = float(record_data.get("Blur", {}).get("topBid", 0))
-      if best_price != current_best_price:
+      if best_price > current_best_price:
           # Update the "bids" property in the "Blur" object
           record_data.update({"Blur": {"bidPayload": bid_data, "topBid": best_price}}, expires=json.loads(json.dumps(EXPIRATION_TIME)))
           ref.update(record_data)
@@ -68,21 +69,45 @@ def on_floor_update(data):
     ref = db.reference(f"records/{contract_address}")
     record_data = ref.get()
 
+    if record_data is None:
+      print(f"No record found for contract address {contract_address}")
+      record_data = {"Blur": {}, "Opensea": {}}
+
+
     if marketplace == "OPENSEA":
-        current_floor_price = float(record_data.get("Opensea", {}).get("floorPrice", {}).get("amount", "0"))
+        opensea_data = record_data.get("Opensea", {})
+        if isinstance(opensea_data, dict):
+          opensea_data_floor = opensea_data.get("floorPrice", {})
+          if isinstance(opensea_data_floor, dict):
+            current_floor_price = float(opensea_data_floor.get("amount", "0"))
+          else:
+            current_floor_price = 0.0
+        else:
+          current_floor_price = 0.0
+           
+        # current_floor_price = float(record_data.get("Opensea", {}).get("floorPrice", {}).get("amount", "0"))
         if current_floor_price != float(floor0["amount"]):
           print("Updating Opensea floor price for contract address ", contract_address)
           record_data.update({"Opensea": {"askPayload": floor_update_data, "floorPrice": floor0['amount']}}, expires=json.loads(json.dumps(EXPIRATION_TIME)))
           ref.update(record_data)
 
     elif marketplace == "BLUR":
-        current_floor_price = float(record_data.get("Blur", {}).get("floorPrice", {}).get("amount", "0"))
+        blur_data = record_data.get("Blur", {})
+        if isinstance(blur_data, dict):
+          blur_data_floor = blur_data.get("floorPrice", {})
+          if isinstance(blur_data_floor, dict):
+            current_floor_price = float(blur_data_floor.get("amount", "0"))
+          else:
+            current_floor_price = 0.0
+        else:
+          current_floor_price = 0.0
+
         if current_floor_price != float(floor0["amount"]):
           print("Updating Blur floor price for contract address ", contract_address)
           record_data.update({"Blur": {"askPayload": floor_update_data, "floorPrice": floor0['amount']}}, expires=json.loads(json.dumps(EXPIRATION_TIME)))
           ref.update(record_data)
   except Exception as e:
-    print("Error in on_floor_update:", e)
+    print("Error in on_floor_update:", e, sys.exc_info()[-1].tb_lineno)
 
 def on_error(ws, error):
     print(f"Error: {error}")
@@ -102,10 +127,14 @@ def on_close(ws, code, reason):
 def on_open(ws):
     # send message "40" when the connection is established
     ws.send("40")
-    cred = credentials.Certificate('./credentials.json')
-    firebase_admin.initialize_app(cred, {
-        'databaseURL': 'https://nft-arb-bot-default-rtdb.firebaseio.com/'
-    })
+    
+    if not firebase_admin._apps:
+      # Initialize Firebase app
+      cred = credentials.Certificate('./credentials.json')
+      firebase_admin.initialize_app(cred, {
+          'databaseURL': 'https://nft-arb-bot-default-rtdb.firebaseio.com/'
+      })
+
     ws.send('4216["subscribe",["stats.floorUpdate", "denormalizer.collectionBidStats"]]')
 
 if __name__ == "__main__":
