@@ -13,16 +13,14 @@ from requests.adapters import HTTPAdapter
 from urllib3.util import Retry
 import websocket
 import ssl
+import threading
+from decimal import Decimal
+from datetime import datetime, timedelta
+
+EXPIRATION_TIME = (datetime.now() + timedelta(days=1)).isoformat()
 
 
 logging.basicConfig(format='%(asctime)s %(levelname)s %(message)s', level=logging.INFO)
-
-def initialize_database():
-    cred = credentials.Certificate('./credentials.json')
-    app = firebase_admin.initialize_app(cred, name='my-app', options={
-        'databaseURL': 'https://nft-arb-bot-default-rtdb.firebaseio.com/',
-    })
-    return db.reference('records', app=app)
 
 class Record:
     def __init__(self, contract_address, opensea_collection_slug, sudoswap):
@@ -30,7 +28,9 @@ class Record:
         self.OpenseaCollectionSlug = opensea_collection_slug
         self.Sudoswap = sudoswap
 
-def get_collection_slugs(ref):
+def get_collection_slugs():
+    ref = db.reference("records")
+
     records = ref.get()
     print('len(records)', len(records))
     if records is None:
@@ -54,34 +54,56 @@ def subscribe(ws, slug):
     }
     ws.send(json.dumps(subscribe))
 
-def handle_collection_offer(message, db, rate_limiter):
+def handle_collection_offer(message):
     data = json.loads(message)
     payload = data['payload']['payload']
     contract_address = payload['asset_contract_criteria']['address']
-    logging.info(f'Handling collection offer for {contract_address}')
-    ref = db.child(f'records/{contract_address}')
-    ref.set(Record(contract_address, payload['collection']['slug'], payload))
+    logging.info(f'Received collection offer for {contract_address}')
+
+    ref = db.reference(f"records/{contract_address}")
+    record_data = ref.get()
+
+    current_top_bid = Decimal(record_data.get("Opensea", {}).get("topBid", 0.0))
+    
+    top_bid = Decimal(payload['base_price']) / Decimal(1e18)
+
+    if current_top_bid != top_bid:
+        print('Updating top bid for contract address', contract_address)
+        record_data.update({"Opensea": {"bidPayload": payload, "topBid": str(top_bid)}}, expires=json.loads(json.dumps(EXPIRATION_TIME)))
+        ref.update(record_data)
+
 
 def on_message(ws, message):
-    handle_collection_offer(message, db, rate_limiter)
+    data = json.loads(message)
+    if data['event'] == 'collection_offer':
+        handle_collection_offer(message)
 
 def on_open(ws):
     logging.info('Connected to server')
 
+    if not firebase_admin._apps:
+        # Initialize Firebase app
+        cred = credentials.Certificate('./credentials.json')
+        firebase_admin.initialize_app(cred, {
+            'databaseURL': 'https://nft-arb-bot-default-rtdb.firebaseio.com/'
+        })
+
     # Call setup_heartbeat
     print("Setting up heartbeat...")
+ 
     setup_heartbeat(ws)
+    threading.Timer(30, setup_heartbeat, args=[ws]).start()
 
     # Subscribe to each collection we are monitoring
-    # collection_slugs = get_collection_slugs(db)
-    # print('Retreived collection slugs', len(collection_slugs))
-    # for slug in collection_slugs:
-    #     subscribe(ws, slug)
-    #     print(f'Subscribed to {slug}')
-
+    collection_slugs = get_collection_slugs()
+    print('Retrieved collection slugs', len(collection_slugs))
+    for slug in collection_slugs:
+        subscribe(ws, slug)
+    print('Subscribed to all collections')
    
-def on_close(ws):
+def on_close(ws, code, reason):
     logging.info('Disconnected from server')
+    logging.error(f'Code: {code}, Reason: {reason}')
     # Attempt to reconnect
     while True:
         try:
@@ -94,32 +116,6 @@ def on_close(ws):
 def on_error(ws, error):
     logging.error(f'WebSocket error: {error}')
 
-def run():
-    while True:
-        try:
-            # Initialize Firebase database
-            db = None
-            if db is None: 
-              db = initialize_database()
-
-            # Create a rate limiter to limit the number of requests we send
-            rate_limiter = ThreadPoolExecutor(max_workers=1)
-
-            # Create a WebSocket connection
-            ws = websocket.WebSocketApp(
-                'wss://stream.openseabeta.com/socket/websocket?token=28fbebb50f2942b686b48522a76eb9bd',
-                on_open=on_open,
-                on_message=on_message,
-                on_error=on_error,
-                on_close=on_close,
-                # sslopt={"cert_reqs": ssl.CERT_NONE}
-            )
-
-            ws.run_forever()
-        except Exception as e:
-            logging.error(f'Error in main loop: {e}')
-            time.sleep(5)
-
 def setup_heartbeat(socket):
     heartbeat = {
         "topic": "phoenix",
@@ -131,17 +127,18 @@ def setup_heartbeat(socket):
     heartbeat_string = json.dumps(heartbeat, indent="", separators=(",", ":"))
 
     logging.info(f"Sending heartbeat {time.strftime('%Y-%m-%d %H:%M:%S')} \n{heartbeat_string}")
-
-
     socket.send(heartbeat_string)
 
-    ticker = time.Ticker(30)
-    try:
-        for _ in ticker:
-            logging.info(f"Sending heartbeat {time.now().strftime('%Y-%m-%d %H:%M:%S')}\n{heartbeat_string}")
-            socket.send(heartbeat_string)
-    except:
-        ticker.close()
-
 if __name__ == '__main__':
-    run()
+    # Create a WebSocket connection
+    websocket.enableTrace(False)
+
+    ws = websocket.WebSocketApp(
+        'wss://stream.openseabeta.com/socket/websocket?token=28fbebb50f2942b686b48522a76eb9bd',
+        on_open=on_open,
+        on_message=on_message,
+        on_error=on_error,
+        on_close=on_close
+    )
+
+    ws.run_forever()

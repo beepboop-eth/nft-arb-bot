@@ -3,6 +3,13 @@ import json
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
+from datetime import datetime, timedelta
+import logging
+import time
+
+
+
+EXPIRATION_TIME = (datetime.now() + timedelta(days=1)).isoformat()
 
 def on_message(ws, message):
     try:
@@ -34,19 +41,28 @@ def on_collection_bid(data):
   record_data = ref.get()
 
   if record_data is not None:
-      # If the record exists, update the "bestPrice" and "Blur" properties
       current_best_price = float(record_data.get("Blur", {}).get("topBid", 0))
       if best_price != current_best_price:
           # Update the "bids" property in the "Blur" object
-          record_data.update({"Blur": {"bids": [bid_data], "topBid": best_price}})
+          record_data.update({"Blur": {"bidPayload": bid_data, "topBid": best_price}}, expires=json.loads(json.dumps(EXPIRATION_TIME)))
           ref.update(record_data)
-          print(f"Updated record for contract address {contract_address}")
+          print(f"Updated Blur top bid for contract address {contract_address}")
 
 def on_floor_update(data):
   try:
     contract_address = data[1]["contractAddress"]
     floor_update_data = data[1]
+    
+    if isinstance(floor_update_data, str) or floor_update_data is None:
+       print("floor_update_data is a string or None", floor_update_data)
+       return
+    
     floor0 = floor_update_data.get("floor0")
+
+    if floor0 is None:
+        print("floor0 is None")
+        return
+    
     marketplace = floor0["marketplace"]
 
     ref = db.reference(f"records/{contract_address}")
@@ -54,18 +70,16 @@ def on_floor_update(data):
 
     if marketplace == "OPENSEA":
         current_floor_price = float(record_data.get("Opensea", {}).get("floorPrice", {}).get("amount", "0"))
-        # print('current_floor_price OS', current_floor_price)
         if current_floor_price != float(floor0["amount"]):
           print("Updating Opensea floor price for contract address ", contract_address)
-          record_data.update({"Opensea": {"asks": [floor_update_data], "floorPrice": floor0}})
+          record_data.update({"Opensea": {"askPayload": floor_update_data, "floorPrice": floor0['amount']}}, expires=json.loads(json.dumps(EXPIRATION_TIME)))
           ref.update(record_data)
 
     elif marketplace == "BLUR":
         current_floor_price = float(record_data.get("Blur", {}).get("floorPrice", {}).get("amount", "0"))
-        # print("current_floor_price Blur ", current_floor_price)
         if current_floor_price != float(floor0["amount"]):
           print("Updating Blur floor price for contract address ", contract_address)
-          record_data.update({"Blur": {"asks": [floor_update_data], "floorPrice": floor0}})
+          record_data.update({"Blur": {"askPayload": floor_update_data, "floorPrice": floor0['amount']}}, expires=json.loads(json.dumps(EXPIRATION_TIME)))
           ref.update(record_data)
   except Exception as e:
     print("Error in on_floor_update:", e)
@@ -73,8 +87,17 @@ def on_floor_update(data):
 def on_error(ws, error):
     print(f"Error: {error}")
 
-def on_close(ws):
-    print("Connection closed")
+def on_close(ws, code, reason):
+    logging.info('Disconnected from server')
+    logging.error(f'Code: {code}, Reason: {reason}')
+    # Attempt to reconnect
+    while True:
+        try:
+            logging.info('Attempting to reconnect...')
+            ws.run_forever()
+        except Exception as e:
+            logging.error(f'Error while reconnecting: {e}')
+            time.sleep(5)
 
 def on_open(ws):
     # send message "40" when the connection is established
@@ -86,7 +109,7 @@ def on_open(ws):
     ws.send('4216["subscribe",["stats.floorUpdate", "denormalizer.collectionBidStats"]]')
 
 if __name__ == "__main__":
-    websocket.enableTrace(True)
+    websocket.enableTrace(False)
     ws_url = "wss://feeds.prod.blur.io/socket.io/?tabId=jvP08hWrhRHy&storageId=Lvlg49tHpB7j&EIO=4&transport=websocket"
     ws = websocket.WebSocketApp(ws_url,
                                 on_message=on_message,
