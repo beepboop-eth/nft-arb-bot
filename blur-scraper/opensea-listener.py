@@ -16,9 +16,9 @@ import ssl
 import threading
 from decimal import Decimal
 from datetime import datetime, timedelta
+import signal
 
 EXPIRATION_TIME = (datetime.now() + timedelta(days=1)).isoformat()
-
 
 logging.basicConfig(format='%(asctime)s %(levelname)s %(message)s', level=logging.INFO)
 
@@ -58,7 +58,7 @@ def handle_collection_offer(message):
     data = json.loads(message)
     payload = data['payload']['payload']
     contract_address = payload['asset_contract_criteria']['address']
-    logging.info(f'Received collection offer for {contract_address}')
+    # logging.info(f'Received collection offer for {contract_address}')
 
     ref = db.reference(f"records/{contract_address}")
     record_data = ref.get()
@@ -66,8 +66,11 @@ def handle_collection_offer(message):
     current_top_bid = Decimal(record_data.get("Opensea", {}).get("topBid", 0.0))
     
     top_bid = Decimal(payload['base_price']) / Decimal(1e18)
+    # print('contract_address', contract_address)
+    # print('current_top_bid', current_top_bid)
+    # print('top_bid', top_bid)
 
-    if current_top_bid > top_bid:
+    if current_top_bid < top_bid:
         print('Updating top bid for contract address', contract_address)
         record_data.update({"Opensea": {"bidPayload": payload, "topBid": str(top_bid)}}, expires=json.loads(json.dumps(EXPIRATION_TIME)))
         ref.update(record_data)
@@ -103,7 +106,7 @@ def on_open(ws):
    
 def on_close(ws, code, reason):
     logging.info('Disconnected from server')
-    logging.error(f'Code: {code}, Reason: {reason}')
+    logging.error(f'Code: {code}, Reason: {reason}', exc_info=True)
     # Attempt to reconnect
     while True:
         try:
@@ -114,7 +117,7 @@ def on_close(ws, code, reason):
             time.sleep(5)
 
 def on_error(ws, error):
-    logging.error(f'WebSocket error: {error}')
+    logging.error(f"WebSocket error: {error}", exc_info=True)
 
 def setup_heartbeat(socket):
     heartbeat = {
@@ -129,7 +132,14 @@ def setup_heartbeat(socket):
     logging.info(f"Sending heartbeat {time.strftime('%Y-%m-%d %H:%M:%S')} \n{heartbeat_string}")
     socket.send(heartbeat_string)
 
+def handle_sigint(signal_num, frame):
+    logging.info("Received SIGINT signal. Exiting...")
+    ws.close()
+
 if __name__ == '__main__':
+    # Register signal handler for SIGINT signal
+    signal.signal(signal.SIGINT, handle_sigint)
+    
     # Create a WebSocket connection
     websocket.enableTrace(False)
 

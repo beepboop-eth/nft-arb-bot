@@ -1,0 +1,99 @@
+
+Costs to trade on Blur: 
+
+listingPrice - gasFee - creatorFee * listingPrice
+
+creatorFee = collection dependent
+
+Gas Fees: 
+- Set Approval For All 
+  - 46, 181
+  - 46,619
+  - 46,643
+  - 46,619
+  - 46,619
+  - 46,703
+  - 46,643
+  - 46,643
+  - 46,619
+Avg: 46,521.89
+
+Taker Fee 
+- Execute:
+  - 294,842
+  - 247,206
+  - 303,606
+  - 301,461
+  - 256,500
+  - 262,530
+  - 271,198
+  - 300,212
+  - 297,038
+  - 259,914
+  - 237,768
+  - 263,337
+Avg: 284,418.5
+- Bulk Execute: 
+  - 495,724 (2)
+  - 407,893 (3)
+  - 433,453 (2)
+  - 794,799 (4)
+  - 501,711 (2)
+  - 1,427,561 (8)
+  - 1,141,579 (6)
+  - 1,490,190 (8)
+
+Tokens transferred	Average gas usage per transaction
+2	                    479296
+3	                    407893
+4	                    794799
+6	                    1141579
+8	                    1458875
+
+
+Costs to trade on Opensea: 
+listingPrice - openseaFee * listingPrice - gasFee - creatorFee * listingPrice
+
+
+openseaFee = 0.5% (will return to 2.5%)
+creatorFee = collection dependent
+
+Gas fees:  
+- Set Approval For All 
+  - 46, 181
+  - 46,619
+  - 46,643
+  - 46,619
+  - 46,619
+  - 46,703
+  - 46,643
+  - 46,643
+  - 46,619
+Avg: 46,521.89
+Taker Fee:
+  - Match Advanced Order
+    - 275,387
+    - 279,000
+    - 231,840
+    - 235,834
+    - 280,191
+    - 222,008
+    - 218,746
+    - 255,267
+    - 301,854
+    - 251,672
+  Avg: 274,129.78
+  - Fulfill Basic Order
+    - 134,551
+    - 129,246
+    - 142,784
+    - 134,827
+    - 161,709
+    - 139,615
+    - 134,827
+    - 111,441
+    - 169,287
+    - 120,573
+  Avg: 142,623.50
+
+  Gas Fee = SetApprovalForAll_Gas * Gas Price + FulfillOrder_Gas * Gas Price

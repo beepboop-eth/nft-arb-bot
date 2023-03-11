@@ -7,8 +7,10 @@ from firebase_admin import db
 from datetime import datetime, timedelta
 import logging
 import time
+import signal
 
-
+# Flag to indicate whether the program is running or not
+is_running = True
 
 EXPIRATION_TIME = (datetime.now() + timedelta(days=1)).isoformat()
 
@@ -43,7 +45,7 @@ def on_collection_bid(data):
 
   if record_data is not None:
       current_best_price = float(record_data.get("Blur", {}).get("topBid", 0))
-      if best_price > current_best_price:
+      if best_price != current_best_price:
           # Update the "bids" property in the "Blur" object
           record_data.update({"Blur": {"bidPayload": bid_data, "topBid": best_price}}, expires=json.loads(json.dumps(EXPIRATION_TIME)))
           ref.update(record_data)
@@ -110,12 +112,16 @@ def on_floor_update(data):
     print("Error in on_floor_update:", e, sys.exc_info()[-1].tb_lineno)
 
 def on_error(ws, error):
-    print(f"Error: {error}")
+    logging.error(f'Error: {error}', exc_info=True)
 
 def on_close(ws, code, reason):
     logging.info('Disconnected from server')
-    logging.error(f'Code: {code}, Reason: {reason}')
+    logging.error(f'ws: {ws} Code: {code}, Reason: {reason}', exc_info=True)
     # Attempt to reconnect
+    if(is_running):
+        reconnect()
+
+def reconnect():
     while True:
         try:
             logging.info('Attempting to reconnect...')
@@ -137,7 +143,15 @@ def on_open(ws):
 
     ws.send('4216["subscribe",["stats.floorUpdate", "denormalizer.collectionBidStats"]]')
 
+def handle_sigint(signal_num, frame):
+    logging.info("Received SIGINT signal. Exiting...")
+    is_running = False
+    ws.close()
+
 if __name__ == "__main__":
+    # Register signal handler for SIGINT signal
+    signal.signal(signal.SIGINT, handle_sigint)
+
     websocket.enableTrace(False)
     ws_url = "wss://feeds.prod.blur.io/socket.io/?tabId=jvP08hWrhRHy&storageId=Lvlg49tHpB7j&EIO=4&transport=websocket"
     ws = websocket.WebSocketApp(ws_url,
