@@ -1,83 +1,136 @@
 from decimal import Decimal
+from fees import get_marketplace_fees
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
+from gas import get_gas_fee, BLUR, OPENSEA
+from db import initialize_database
+from decimal import Decimal
 
-cred = credentials.Certificate('./credentials.json')
-firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://nft-arb-bot-default-rtdb.firebaseio.com/'
-})
+def get_potential_arbs():
+  ref = db.reference("records")
+  records = ref.get()
 
-ref = db.reference("records")
-records = ref.get()
+  filtered_records = []
 
-filtered_records = []
+  for key in records:
+      record = records[key]
+      if 'Opensea' in record and 'Blur' in record:
+          record['contractAddress'] = key
+          filtered_records.append(record)
 
-for key in records:
-    record = records[key]
-    if 'Opensea' in record and 'Blur' in record:
-        record['contractAddress'] = key
-        filtered_records.append(record)
+  return filtered_records
 
-print('potential arbs', len(filtered_records))
 
-potential_arbs = []
+def get_spread_after_fees(contract_address, top_bid, floor_price, marketplace_path):
+    gas_fee = get_gas_fee(marketplace_path)['average']
+    marketplace_fees = get_marketplace_fees(contract_address, marketplace_path)
+    gas_settings = {
+        "maxPriorityFeePerGas": gas_fee['maxPriorityFeePerGas'],
+        "maxFeePerGas": gas_fee['maxFeePerGas']
+    }
 
-for record in filtered_records:
-    opensea = record.get('Opensea', {})
-    os_top_bid = Decimal(opensea.get('topBid', 0.0))
+    return top_bid - floor_price - gas_fee['value'] - marketplace_fees, gas_fee['value'], gas_settings, marketplace_fees
 
-    os_floor = opensea.get('floorPrice')
+def does_arb_exist(filtered_records):
+    buy_on_blur_arbs = []
+    buy_on_os_arbs = []
 
-    if os_floor is None:
-        os_floor = 0.0
+    for record in filtered_records:
+        opensea = record.get('Opensea', {})
+        os_top_bid = Decimal(opensea.get('topBid', 0.0))
 
-    if isinstance(os_floor, dict):
-        os_floor_price = Decimal(os_floor.get('amount', 0.0))
-    else:
-        os_floor_price = Decimal(os_floor)
+        os_floor = opensea.get('floorPrice')
 
-    blur = record.get('Blur', {})
-    blur_top_bid = Decimal(blur.get('topBid', 0.0))
-    blur_floor_price = Decimal(blur.get('floorPrice', 0.0))
+        if os_floor is None:
+            os_floor = 0.0
 
-    # Check for potential arbitrage opportunities
-    contract_address = record.get('ContractAddress', record.get('contractAddress', ''))
+        if isinstance(os_floor, dict):
+            os_floor_price = Decimal(os_floor.get('amount', 0.0))
+        else:
+            os_floor_price = Decimal(os_floor)
 
-    if ((os_top_bid > blur_floor_price and os_top_bid > 0 and blur_floor_price > 0)  or (blur_top_bid > os_floor_price and blur_top_bid > 0 and os_floor_price > 0)) :
-        potential_arbs.append({
-            'contractAddress': contract_address,
-            'Opensea': {
+        blur = record.get('Blur', {})
+        blur_top_bid = Decimal(blur.get('topBid', 0.0))
+        blur_floor_price = Decimal(blur.get('floorPrice', 0.0))
+
+        # Check for potential arbitrage opportunities
+        contract_address = record.get('ContractAddress', record.get('contractAddress', ''))
+
+        if (os_top_bid > blur_floor_price and os_top_bid > 0 and blur_floor_price > 0):
+            marketplace_path = [
+                { "marketplace": "OPENSEA", "price": os_top_bid },
+                { "marketplace": "BLUR", "price": blur_floor_price }
+            ]
+            spread, gas_fee, gas_settings, marketplace_fees = get_spread_after_fees(contract_address, os_top_bid, blur_floor_price, marketplace_path)
+            buy_on_blur_arbs.append({
+                'contractAddress': contract_address,
                 'topBid': os_top_bid,
-                'floorPrice': os_floor_price,
-            },
-            'Blur': {
-                'topBid': blur_top_bid,
                 'floorPrice': blur_floor_price,
-            }
-        })
+                'spreadRaw': os_top_bid - blur_floor_price,
+                'spreadPercentageRaw': (os_top_bid - blur_floor_price) / blur_floor_price * 100,
+                'spreadAfterFees': spread,
+                'spreadPercentageAfterFees': spread / blur_floor_price * 100,
+                'gasFee': gas_fee,
+                'marketplaceFees': marketplace_fees,
+                'gasSettings': gas_settings,
+            })
+        elif (blur_top_bid > os_floor_price and blur_top_bid > 0 and os_floor_price > 0):
+            marketplace_path = [
+                { "marketplace": "BLUR", "price": blur_top_bid },
+                { "marketplace": "OPENSEA", "price": os_floor_price }
+            ]
+            spread, gas_fee, gas_settings, marketplace_fees = get_spread_after_fees(contract_address, blur_top_bid, os_floor_price, marketplace_path)
+            buy_on_os_arbs.append({
+                'contractAddress': contract_address,
+                'topBid': blur_top_bid,
+                'floorPrice': os_floor_price,
+                'spreadRaw': blur_top_bid - os_floor_price,
+                'spreadPercentageRaw': (blur_top_bid - os_floor_price) / os_floor_price * 100,
+                'spreadAfterFees': spread,
+                'spreadPercentageAfterFees': spread / os_floor_price * 100,
+                'gasFee': gas_fee,
+                'marketplaceFees': marketplace_fees,
+                'gasSettings': gas_settings,
+            })
 
-for arb in potential_arbs:
-    contract_address = arb['contractAddress']
-    os_spread = arb['Opensea']['topBid'] -  arb['Blur']['floorPrice']
-    blur_spread = arb['Blur']['topBid'] - arb['Opensea']['floorPrice']
+    return buy_on_blur_arbs, buy_on_os_arbs
 
-    isBuyOs = os_spread > 0
-    isBuyBlur = blur_spread > 0
+def calculate_arb_spread(potential_arbs):
+  print('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<')
+  for arb in potential_arbs:
+      contract_address = arb['contractAddress']
+      print('contract address:', contract_address)
 
-    print('contract address:', contract_address)
+      print('Top bid:', arb['topBid'])
+      print('Floor price:', arb['floorPrice'])
+      print('Raw price difference:', arb['spreadRaw'])
+      print('Raw percentage price difference: ' + str(arb['spreadPercentageRaw']) + '%')
+      print('Price difference after fees:', arb['spreadAfterFees'])
+      print('Percentage price difference after fees: ' + str(arb['spreadPercentageAfterFees']) + '%')
+      print('Gas fee:', arb['gasFee'])
+      print('Marketplace fees:', arb['marketplaceFees'])
+      print('Gas settings:', arb['gasSettings'])
+      print('------------------------------------')
+  print('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
+def main():
+  print('Calculating arb...')
+  initialize_database()
+  # print(get_marketplace_fees([{ "marketplace": BLUR, "price": 1.0}, { "marketplace": OPENSEA, "price": 1.5}], '0x00000000001ba87a34f0d3224286643b36646d81'))
+  print('Initialized database, finding potential arbs...')
+  filtered_records = get_potential_arbs()
+  print('Potential arbs', len(filtered_records))
 
-    if isBuyOs:
-        print('Buy on Opensea, sell on blur')
-        print('Raw price difference:', os_spread)
-        print('Opensea top bid:', arb['Opensea']['topBid'])
-        print('Blur floor price:', arb['Blur']['floorPrice'])
-        print('Percentage price difference: ' + str(os_spread / arb['Blur']['floorPrice'] * 100) + '%')
-    elif isBuyBlur:
-        print('Buy on blur, sell on Opensea')
-        print('Blur top bid:', arb['Blur']['topBid'])
-        print('Opensea floor price:', arb['Opensea']['floorPrice'])
-        print('Raw price difference:', blur_spread)
-        print('Percentage price difference: ' + str(blur_spread / arb['Opensea']['floorPrice'] * 100) + '%')
-    print('------------------------------------')
-print('potential arbs', len(potential_arbs))
+  buy_on_blur_arbs, buy_on_os_arbs = does_arb_exist(filtered_records)
+
+  print('Buy on blur, sell on Opensea', len(buy_on_blur_arbs))
+  calculate_arb_spread(buy_on_blur_arbs)
+
+  print('Buy on Opensea, sell on blur', len(buy_on_os_arbs))
+  calculate_arb_spread(buy_on_os_arbs)
+
+  print('Total arbs found:', len(buy_on_blur_arbs) + len(buy_on_os_arbs))
+  print('Total profitable arbs found after fees: ', len(list(filter(lambda x: x['spreadAfterFees'] > 0, buy_on_blur_arbs))) + len(list(filter(lambda x: x['spreadAfterFees'] > 0, buy_on_os_arbs))))
+
+if __name__ == '__main__':
+    main()
