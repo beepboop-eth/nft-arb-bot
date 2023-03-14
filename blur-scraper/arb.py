@@ -101,7 +101,6 @@ def calculate_arb_spread(potential_arbs):
   for arb in potential_arbs:
       contract_address = arb['contractAddress']
       print('contract address:', contract_address)
-
       print('Top bid:', arb['topBid'])
       print('Floor price:', arb['floorPrice'])
       print('Raw price difference:', arb['spreadRaw'])
