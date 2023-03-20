@@ -18,7 +18,7 @@ from decimal import Decimal
 from datetime import datetime, timedelta
 import signal
 
-EXPIRATION_TIME = (datetime.now() + timedelta(days=1)).isoformat()
+EXPIRATION_TIME = (datetime.now() + timedelta(hours=1)).isoformat()
 
 logging.basicConfig(format='%(asctime)s %(levelname)s %(message)s', level=logging.INFO)
 
@@ -72,7 +72,7 @@ def handle_collection_offer(message):
 
     if current_top_bid < top_bid:
         print('Updating top bid for contract address', contract_address)
-        record_data.update({"Opensea": {"bidPayload": payload, "topBid": str(top_bid)}}, expires=json.loads(json.dumps(EXPIRATION_TIME)))
+        record_data.update({"Opensea": {"bidPayload": payload, "topBid": str(top_bid), "timestamp": time.strftime('%Y-%m-%d %H:%M:%S')}}, expires=json.loads(json.dumps(EXPIRATION_TIME)))
         ref.update(record_data)
 
 

@@ -7,6 +7,8 @@ from gas import get_gas_fee, BLUR, OPENSEA
 from db import initialize_database
 from decimal import Decimal
 
+BLACKLIST_CONTRACTS = ['0x2b0bfa93beb22f44e7c1be88efd80396f8d9f1d4', '0x672664ccad533401066ebb70361c93c4ca567de0', '0x672664ccad533401066ebb70361c93c4ca567de0']
+
 def get_potential_arbs():
   ref = db.reference("records")
   records = ref.get()
@@ -39,6 +41,7 @@ def does_arb_exist(filtered_records):
     for record in filtered_records:
         opensea = record.get('Opensea', {})
         os_top_bid = Decimal(opensea.get('topBid', 0.0))
+        os_timestamp = opensea.get('timestamp', '')
 
         os_floor = opensea.get('floorPrice')
 
@@ -53,6 +56,7 @@ def does_arb_exist(filtered_records):
         blur = record.get('Blur', {})
         blur_top_bid = Decimal(blur.get('topBid', 0.0))
         blur_floor_price = Decimal(blur.get('floorPrice', 0.0))
+        blur_timestamp = blur.get('timestamp', '')
 
         # Check for potential arbitrage opportunities
         contract_address = record.get('ContractAddress', record.get('contractAddress', ''))
@@ -74,6 +78,8 @@ def does_arb_exist(filtered_records):
                 'gasFee': gas_fee,
                 'marketplaceFees': marketplace_fees,
                 'gasSettings': gas_settings,
+                'timestamptopBid': os_timestamp,
+                'timestampfloorPrice': blur_timestamp,
             })
         elif (blur_top_bid > os_floor_price and blur_top_bid > 0 and os_floor_price > 0):
             marketplace_path = [
@@ -92,25 +98,45 @@ def does_arb_exist(filtered_records):
                 'gasFee': gas_fee,
                 'marketplaceFees': marketplace_fees,
                 'gasSettings': gas_settings,
+                'timestamptopBid': blur_timestamp,
+                'timestampfloorPrice': os_timestamp,
             })
 
     return buy_on_blur_arbs, buy_on_os_arbs
 
 def calculate_arb_spread(potential_arbs):
   print('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<')
-  for arb in potential_arbs:
-      contract_address = arb['contractAddress']
-      print('contract address:', contract_address)
-      print('Top bid:', arb['topBid'])
-      print('Floor price:', arb['floorPrice'])
-      print('Raw price difference:', arb['spreadRaw'])
-      print('Raw percentage price difference: ' + str(arb['spreadPercentageRaw']) + '%')
-      print('Price difference after fees:', arb['spreadAfterFees'])
-      print('Percentage price difference after fees: ' + str(arb['spreadPercentageAfterFees']) + '%')
-      print('Gas fee:', arb['gasFee'])
-      print('Marketplace fees:', arb['marketplaceFees'])
-      print('Gas settings:', arb['gasSettings'])
-      print('------------------------------------')
+
+  filtered_potential_arbs = filter(lambda x: x['contractAddress'] not in BLACKLIST_CONTRACTS, potential_arbs)
+  for arb in filtered_potential_arbs:
+      if arb['spreadAfterFees'] > 0:
+        contract_address = arb['contractAddress']
+        print('contract address:', contract_address)
+        print('Top bid:', arb['topBid'])
+        print('Timestamp top bid:', arb['timestamptopBid'])
+        print('Floor price:', arb['floorPrice'])
+        print('Timestamp floor price:', arb['timestampfloorPrice'])
+        print('Raw price difference:', arb['spreadRaw'])
+        print('Raw percentage price difference: ' + str(arb['spreadPercentageRaw']) + '%')
+        print('Price difference after fees:', arb['spreadAfterFees'])
+        print('Percentage price difference after fees: ' + str(arb['spreadPercentageAfterFees']) + '%')
+        print('Gas fee:', arb['gasFee'])
+        print('Marketplace fees:', arb['marketplaceFees'])
+        print('Gas settings:', arb['gasSettings'])
+        print('------------------------------------')
+      # for arb in potential_arbs:
+      #   contract_address = arb['contractAddress']
+      #   print('contract address:', contract_address)
+      #   print('Top bid:', arb['topBid'])
+      #   print('Floor price:', arb['floorPrice'])
+      #   print('Raw price difference:', arb['spreadRaw'])
+      #   print('Raw percentage price difference: ' + str(arb['spreadPercentageRaw']) + '%')
+      #   print('Price difference after fees:', arb['spreadAfterFees'])
+      #   print('Percentage price difference after fees: ' + str(arb['spreadPercentageAfterFees']) + '%')
+      #   print('Gas fee:', arb['gasFee'])
+      #   print('Marketplace fees:', arb['marketplaceFees'])
+      #   print('Gas settings:', arb['gasSettings'])
+      #   print('------------------------------------')
   print('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
 def main():
   print('Calculating arb...')
